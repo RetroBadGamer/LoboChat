@@ -3,12 +3,12 @@
   
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyAqzIWakGNMv9Qpx4-XJLD_g0UylQ0iCf0",
-    authDomain: "lobochat-app.firebaseapp.com",
-    databaseURL: "https://lobochat-app.firebaseio.com",
-    projectId: "lobochat-app",
-    storageBucket: "lobochat-app.appspot.com",
-    messagingSenderId: "1066676069084"
+    apiKey: "AIzaSyDdVuH2idlgxyu-lY2KYbJXTmKFoDzRgt0",
+    authDomain: "lobochat-stg.firebaseapp.com",
+    databaseURL: "https://lobochat-stg.firebaseio.com",
+    projectId: "lobochat-stg",
+    storageBucket: "lobochat-stg.appspot.com",
+    messagingSenderId: "502592929802"
   };
   const firebaseApp = firebase.initializeApp(config);
   firebaseApp.firestore().settings({ timestampsInSnapshots: true })
