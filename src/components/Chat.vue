@@ -5,7 +5,7 @@
             <div class="card-content">
                 <ul class="messages" v-chat-scroll>
                     <li v-for="message in messages" :key="message.id">
-                        <span class="teal-text">{{ message.name }}</span>
+                        <span class="teal-text">{{ message.name }}:</span>
                         <span class="grey-text text-darken-3">{{ message.content }}</span>
                         <span class="grey-text time">{{ message.timestamp }}</span>
                     </li>
@@ -67,7 +67,7 @@ export default {
     font-size: 0.8em;
 }
 .messages{
-    max-height: 300px;
+    max-height: 550px;
     overflow: auto;
 }
 .messages::-webkit-scrollbar{
