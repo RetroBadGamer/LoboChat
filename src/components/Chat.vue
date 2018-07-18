@@ -1,6 +1,7 @@
 <template>
     <div class="chat container">
         <h2 class="center teal-text">Let's Chat!</h2>
+        <LeftPanel/>
         <div class="card">
             <div class="card-content">
                 <ul class="messages" v-chat-scroll>
@@ -22,12 +23,14 @@
 import NewMessage from '@/components/NewMessage'
 import db from '@/firebase/init'
 import moment from 'moment'
+import LeftPanel from '@/components/LeftPanel'
 
 export default {
     name: 'Chat',
     props: ['name'],
     components: {
-        NewMessage
+        NewMessage,
+        LeftPanel
     },
     data(){
         return {
