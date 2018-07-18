@@ -27,5 +27,20 @@ export default {
 	padding: 0;
 }
 
+li {
+	background: white;
+	height: 40px;
+	line-height: 40px;
+}
+
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
 </style>
 
